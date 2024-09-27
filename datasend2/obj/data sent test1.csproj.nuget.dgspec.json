@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "N:\\y2\\datasend2\\datasendtest\\datasend2\\datasend2.csproj": {}
+    "N:\\y2\\data sent test1\\data sent test1\\data sent test1.csproj": {}
   },
   "projects": {
-    "N:\\y2\\datasend2\\datasendtest\\datasend2\\datasend2.csproj": {
+    "N:\\y2\\data sent test1\\data sent test1\\data sent test1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\y2\\datasend2\\datasendtest\\datasend2\\datasend2.csproj",
-        "projectName": "datasend2",
-        "projectPath": "N:\\y2\\datasend2\\datasendtest\\datasend2\\datasend2.csproj",
+        "projectUniqueName": "N:\\y2\\data sent test1\\data sent test1\\data sent test1.csproj",
+        "projectName": "data sent test1",
+        "projectPath": "N:\\y2\\data sent test1\\data sent test1\\data sent test1.csproj",
         "packagesPath": "C:\\Users\\0053776\\.nuget\\packages\\",
-        "outputPath": "N:\\y2\\datasend2\\datasendtest\\datasend2\\obj\\",
+        "outputPath": "N:\\y2\\data sent test1\\data sent test1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

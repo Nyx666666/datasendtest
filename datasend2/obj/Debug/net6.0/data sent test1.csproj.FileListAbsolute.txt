@@ -1,0 +1,15 @@
+N:\y2\data sent test1\data sent test1\bin\Debug\net6.0\data sent test1.exe
+N:\y2\data sent test1\data sent test1\bin\Debug\net6.0\data sent test1.deps.json
+N:\y2\data sent test1\data sent test1\bin\Debug\net6.0\data sent test1.runtimeconfig.json
+N:\y2\data sent test1\data sent test1\bin\Debug\net6.0\data sent test1.dll
+N:\y2\data sent test1\data sent test1\bin\Debug\net6.0\data sent test1.pdb
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\data sent test1.csproj.AssemblyReference.cache
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\data sent test1.GeneratedMSBuildEditorConfig.editorconfig
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\data sent test1.AssemblyInfoInputs.cache
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\data sent test1.AssemblyInfo.cs
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\data sent test1.csproj.CoreCompileInputs.cache
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\data sent test1.dll
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\refint\data sent test1.dll
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\data sent test1.pdb
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\data sent test1.genruntimeconfig.cache
+N:\y2\data sent test1\data sent test1\obj\Debug\net6.0\ref\data sent test1.dll
