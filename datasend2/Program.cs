@@ -147,7 +147,7 @@ class client
                 for (int i = 0; i == -100000000; i++)
                 {
                     var received = targetclient.ReceiveAsync(buffer, SocketFlags.None);
-                    
+                    //
                 }
             }
             
