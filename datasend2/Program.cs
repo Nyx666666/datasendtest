@@ -3,6 +3,8 @@ using System.Net.Sockets;
 using System.Net.PeerToPeer;
 using System.Text;
 using System.Numerics;
+using System.Diagnostics;
+using System;
 
 
 
@@ -36,52 +38,68 @@ catch(Exception e)
 */
 
 var hostName = Dns.GetHostName();
+IPAddress Ip_Address = Dns.GetHostAddresses(hostName)[0];
+IPEndPoint ipEndPoint = new(Ip_Address, 52000);
+
+
+
+IPHostEntry hostInfo = Dns.GetHostByName(hostName);
+Console.WriteLine("Host name : " + hostInfo.HostName);
+Console.WriteLine("IP address List : ");
+for (int index = 0; index < hostInfo.AddressList.Length; index++)
+{
+    Console.WriteLine(hostInfo.AddressList[index]);
+}
+
 new Thread(() =>
 {
     Thread.CurrentThread.IsBackground = true;
-    host Host = new host(hostName);
+    host Host = new host(ipEndPoint);
 }).Start();
 
 
-//Console.ReadLine();
-//client client = new client(hostName);
+Console.ReadLine();
+client client = new client(ipEndPoint);
 //client client = new client(hostName);
 
 while (true) { }
 class host
 {
 
-    public host(string hostName)
+    public host(IPEndPoint ipEndPoint)
     {
 
-        IPAddress Ip_Address = Dns.GetHostAddresses(hostName)[0];
-        IPEndPoint ipEndPoint = new(Ip_Address, 52000);
-        Console.WriteLine(ipEndPoint.ToString + "aaaaaaaaaaaaaaaaaaaaaaaa");
+        //IPAddress Ip_Address = Dns.GetHostAddresses(hostName)[0];
+        //IPEndPoint ipEndPoint = new(Ip_Address, 52000);
+        //Console.WriteLine(ipEndPoint.ToString + "aaaaaaaaaaaaaaaaaaaaaaaa");
 
-        using Socket recsoc = new Socket(ipEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-
+        //using Socket recsoc = new Socket(ipEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+        Socket recsoc = new Socket(ipEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
         recsoc.Bind(ipEndPoint);
         recsoc.Listen(52000);
         
 
-        var outlisten = recsoc.AcceptAsync().WaitAsync(new TimeSpan(-1));
-        Console.ReadLine();
+        var outlisten = recsoc.Accept();
         int i = 0;
-        while (true)
-        {
+        //while (true)
+        //{
             
-            if (recsoc.IsBound == true) { break; }
-            else { i ++; Console.WriteLine(i); }
-        }
+        //    if (recsoc.IsBound &  outlisten.Connected) { break; }
+        //    else { i ++; Debug.WriteLine(i); }
+        //}
         while (true)
         {
             
             var buffer = new byte[1_024];
             
-            var received =  recsoc.ReceiveAsync(buffer,SocketFlags.None).WaitAsync(new TimeSpan(-1));
+            var received =  outlisten.ReceiveAsync(buffer,SocketFlags.None);
             
             var response = Encoding.UTF8.GetString(buffer, 0, received.Result);
-            Console.Write(response);
+
+
+            Console.WriteLine("response: " + response);
+
+            outlisten.Send(Encoding.UTF8.GetBytes("<ACK>"), SocketFlags.None);
         }
         
         //TcpListener
@@ -91,21 +109,21 @@ class host
 class client
 {
     
-    public client(string hostName)
+    public client(IPEndPoint ipEndPoint)
     {
         try
         {
             // Get 'IPHostEntry' object containing information like host name, IP addresses, aliases for a host.
-            IPHostEntry hostInfo = Dns.GetHostByName(hostName);
-            Console.WriteLine("Host name : " + hostInfo.HostName);
-            Console.WriteLine("IP address List : ");
-            for (int index = 0; index < hostInfo.AddressList.Length; index++)
-            {
-                Console.WriteLine(hostInfo.AddressList[index]);
-            }
+            //IPHostEntry hostInfo = Dns.GetHostByName(hostName);
+            //Console.WriteLine("Host name : " + hostInfo.HostName);
+            //Console.WriteLine("IP address List : ");
+            //for (int index = 0; index < hostInfo.AddressList.Length; index++)
+            //{
+            //    Console.WriteLine(hostInfo.AddressList[index]);
+            //}
 
-            IPAddress Ip_Address = Dns.GetHostAddresses(hostName)[0];
-            IPEndPoint ipEndPoint = new(Ip_Address, 52000);
+            //IPAddress Ip_Address = Dns.GetHostAddresses(hostName)[0];
+            //IPEndPoint ipEndPoint = new(Ip_Address, 52000);
 
             //HttpClient client = new HttpClient();
             Socket targetclient = new(
@@ -115,8 +133,23 @@ class client
             Console.WriteLine(targetclient.AddressFamily + targetclient.Available);
             Console.ReadLine();
             targetclient.Connect(ipEndPoint);
+            while (targetclient.Connected == false) { }
             var messageBytes = Encoding.UTF8.GetBytes("test hallo");
             targetclient.Send(messageBytes,SocketFlags.None);
+            while (targetclient.Connected == true) 
+            {
+                var buffer = new byte[1_024];
+
+                Console.WriteLine("enter msg: ");
+                messageBytes = Encoding.UTF8.GetBytes(Console.ReadLine()) ;
+                targetclient.Send(messageBytes, SocketFlags.None);
+
+                for (int i = 0; i == -100000000; i++)
+                {
+                    var received = targetclient.ReceiveAsync(buffer, SocketFlags.None);
+                    
+                }
+            }
             
         }
         catch (SocketException e)

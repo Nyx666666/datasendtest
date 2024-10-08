@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jpdPhAipLp4GnquCYjO9yM8JZuHKw57dLTjs/37iWQYQx0a8ep50wkfU/k7oVwlo+HMwmoiSN9/xUZv1fDDJgA==",
+  "dgSpecHash": "lPZOCg5C0KDa+jUV3tn50ZqszPxILDgpaNPSGAbjjRC+xLaZHnsH571F1O4E07cZDZkXvUp9o688OBafegYxYg==",
   "success": true,
-  "projectFilePath": "N:\\y2\\datasend2\\datasendtest\\datasend2\\datasend2.csproj",
+  "projectFilePath": "N:\\y2\\nyx nea\\datasend2\\datasendtest\\datasend2\\datasend2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\0053776\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\0053776\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

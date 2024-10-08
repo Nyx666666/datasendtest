@@ -13,3 +13,33 @@ N:\y2\datasend2\datasendtest\datasend2\obj\Debug\net6.0\refint\datasend2.dll
 N:\y2\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.pdb
 N:\y2\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.genruntimeconfig.cache
 N:\y2\datasend2\datasendtest\datasend2\obj\Debug\net6.0\ref\datasend2.dll
+E:\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.exe
+E:\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.deps.json
+E:\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.runtimeconfig.json
+E:\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.dll
+E:\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.pdb
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.GeneratedMSBuildEditorConfig.editorconfig
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.AssemblyInfoInputs.cache
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.AssemblyInfo.cs
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.csproj.CoreCompileInputs.cache
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.dll
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\refint\datasend2.dll
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.pdb
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.genruntimeconfig.cache
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\ref\datasend2.dll
+E:\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.csproj.AssemblyReference.cache
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.exe
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.deps.json
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.runtimeconfig.json
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.dll
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\bin\Debug\net6.0\datasend2.pdb
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.csproj.AssemblyReference.cache
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.GeneratedMSBuildEditorConfig.editorconfig
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.AssemblyInfoInputs.cache
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.AssemblyInfo.cs
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.csproj.CoreCompileInputs.cache
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.dll
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\refint\datasend2.dll
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.pdb
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\datasend2.genruntimeconfig.cache
+N:\y2\nyx nea\datasend2\datasendtest\datasend2\obj\Debug\net6.0\ref\datasend2.dll
